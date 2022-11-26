@@ -1,0 +1,161 @@
+/* Global styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    background-color: rgb(32 33 36);
+    font-family: arial, sans-serif;
+}
+/* Header Styling */
+header nav{
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 8px;
+}
+nav div {
+    margin: 13px 8px ;
+}
+nav div:has(svg) {
+    display: flex;
+    place-content: center;
+    width: 40px;
+    height: 40px;
+}
+header nav div svg {
+    width: 24px;
+}
+header nav div:nth-child(4) {
+    border-radius: 50%;
+    overflow: hidden;
+}
+header nav div:nth-child(4) img {
+    height: 100%;
+    width: 100%;
+}
+/* End Header Styling */
+
+/*hover Effect on nav */
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+nav div:has(svg):hover ,nav div:nth-child(4) img{
+    border-radius: 50%;
+    background-color: rgba(81, 81, 81, 0.333);
+    cursor: pointer;
+}
+/* End Hover styling */
+
+/*Start Main section   */
+main {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 50px;
+}
+/* Search bar styling */
+.search{
+    display: flex;
+    border: 1px solid #70757a;
+    border-radius: 20px;
+    width: 35em;
+    /* height: 2em; */
+    padding: 7px;
+    margin-top: 25px;
+}
+.search > * {
+    margin: 0 5px;
+}
+.search input {
+    width:80%;
+    background-color: inherit;
+    border: 0;
+}
+/* icons size */
+.search > div:first-child , .search > div:last-of-type div , .search > div:last-of-type div img{
+    width: 23px;
+}
+/* last two icons in search */
+.search >div:last-of-type div {
+    margin: 0 5px;
+}
+/* Hover and focus on input */
+.search:hover {
+    background-color: #303134;
+}
+.search input:focus {
+    outline: 0;
+    caret-color: white;
+}
+.icon {
+    display: flex;
+}
+/* buttons styling */
+
+.buttons button {
+    background-color: #303134;
+    color: #f8f9fa;
+    border: 1px solid transparent;
+    padding: 9px 16px;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+/* buttons done */
+main> div:last-of-type {
+    color: #bdc1c6 ;
+    margin-top:25px ;
+    font-size: 13px;
+}
+main> div:last-of-type a {
+    color: #66aff7;
+}
+
+/* Footer styling */
+
+footer {
+    width: 100%;
+    bottom: 0px;
+    background-color: #171717;
+    color: #70757a;
+    position: fixed;
+}
+
+footer h3 {
+    padding: 15px 30px;
+    border-bottom: 1px solid #70757a;
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    color: #70757a;
+}
+
+footer .footer_google {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+footer a {
+    color: #70757a;
+    text-decoration: none;
+    padding: 20px 30px;
+    padding-right: 0;
+    display: inline-block;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
