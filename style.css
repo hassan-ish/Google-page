@@ -75,6 +75,7 @@ main {
     width:80%;
     background-color: inherit;
     border: 0;
+    color: white;
 }
 /* icons size */
 .search > div:first-child , .search > div:last-of-type div , .search > div:last-of-type div img{
